@@ -28,16 +28,10 @@ body {
     line-height: 1.2;      
 }
 
-
-.header-left a,
-.header-right a {
-    border-right: 1px solid#3f51b5; 
-}
-
-
-.header-left a:last-child {
-    border-right: none;
-}
+.main-content-wrapper {
+    display: flex;     
+    min-height: 80vh;   
+    background-color: #eee
 
 
 .header-right {
@@ -109,6 +103,43 @@ body {
     font-weight: bold;
     font-size: 0.9rem;
     border-radius: 3px;
-    white-space: nowrap; 
+    }
+
+.product-grid {
+    flex-grow: 1; 
+    padding: 30px;
+ 
 }
 
+.vertical-menu {
+    width: 250px; 
+    flex-shrink: 0;
+    
+    background-color: white; 
+}
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li a {
+    display: block; 
+    background-color: #4169E1;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none; 
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid white; 
+    transition: background-color 0.3s;
+}
+
+.menu-list li:last-child a {
+    border-bottom: none;
+}
+
+.menu-list li a:hover {
+    background-color: #3350B5; 
+}
